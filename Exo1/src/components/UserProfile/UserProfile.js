@@ -7,10 +7,8 @@ const UserProfile = ({ name, age }) => {
   const [likes, setLikes] = useState(0);
 
   useEffect(() => {
-    // Log la nouvelle valeur du compteur
     console.log(`Nombre de likes: ${likes}`);
     
-    // Vérifier si le nombre de likes est un multiple de 5 (excluant 0)
     if (likes !== 0 && likes % 5 === 0) {
       console.log(`🎉 Félicitations ! Vous avez atteint ${likes} likes !`);
     }
